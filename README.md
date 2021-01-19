@@ -6,7 +6,7 @@ Building an initial website to host projects for my developer portfolio.
 ## Technologies
 + HTML
 + CSS
-+ Flexbox
++ Sass
 + VS Code
 + Command Line
 + Git
@@ -16,4 +16,4 @@ Building an initial website to host projects for my developer portfolio.
 Run in the browser.
 
 ## Status
-Initial set up and wireframing in progress.
+Building ongoing.

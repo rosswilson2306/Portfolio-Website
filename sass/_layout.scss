@@ -1,0 +1,65 @@
+////////////////////////////////
+// ABOUT
+
+.about {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__heading-box {
+        flex: 0 0 100%;
+    }
+
+    &__skills-box {
+        height: 50rem;
+    }
+
+    &__blurb-box {
+        height: 50rem;
+        width: 50rem;
+    }
+}
+
+
+////////////////////////////////
+// PROJECTS
+
+.projects {
+    
+    &__heading-box {
+        margin-bottom: 6rem;
+        padding-top: 2rem;
+    }
+
+    &__heading {
+        
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    &__card {
+        margin-bottom: 5rem;
+        
+    }
+
+    &__card--img {
+       
+    }
+
+    &__card--heading {
+        
+    }   
+
+    &__card--blurb {
+        
+    }
+
+}

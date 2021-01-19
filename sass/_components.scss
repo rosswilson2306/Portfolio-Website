@@ -1,0 +1,233 @@
+////////////////////////////////
+// REUSABLE
+.btn {
+    border: none;
+    color: var(--color-grey-light);
+    font-size: 2rem;
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all .2s;
+    outline:none;
+
+    &:hover,
+    &:active {
+        transform: scale(1.1);
+    }
+
+    &__hero {
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
+.heading__secondary {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--color-grey-dark);
+}
+
+.heading__tertiary {
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--color-grey-dark);
+}
+
+
+////////////////////////////////
+// HEADER
+
+.header {
+    background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+    height: 10vh;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: var(--color-grey-light);
+
+    &__name {
+        color: inherit;
+        font-weight: 200;
+    }
+
+    &__nav {
+        width: 40rem;
+    }
+
+    &__nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        color: inherit;
+        transition: all .2s;
+
+        &:hover,
+        &:active {
+            border-bottom: 1px solid var(--color-grey-dark);
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+////////////////////////////////
+// HERO
+
+.hero {
+    background-color: var(--color-grey-light);
+    height: 100vh;
+
+    &__container {
+        width: 80%;
+        margin: 10rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__heading {
+        font-size: 4.5rem;
+        font-weight: 200;
+        margin-top: -2rem;
+    } 
+
+
+    &__img {
+        width: 30rem;
+    }
+}
+
+
+
+////////////////////////////////
+// ABOUT
+
+.about {
+    
+    &__heading-box {
+
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__skills-box {
+        
+    }
+
+    &__blurb {
+        font-size: 1.8rem;
+        line-height: 1.6;
+        padding: 1rem;
+        padding-top: 6rem;
+    }
+}
+
+.about__skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 40rem;
+}
+
+.skills {
+
+    &__heading {
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+
+    &__icon {
+        height: 6rem;
+        width: 6rem;
+        margin: 1rem;
+        flex: 0 0 20%;
+        margin-top: -10rem;
+    }
+}
+
+////////////////////////////////
+// ICON COLORS
+.html {
+    fill: #e34c26;
+}
+
+.css {
+    fill: #264de4;
+}
+
+.git {
+    fill: #f34f29;
+}
+
+.sass {
+    fill: #cc6699;
+}
+
+.js {
+    fill: #f0db4f;
+}
+
+.node {
+    fill: #3c873a;
+}
+
+.xd {
+    fill: #da47cd;
+}
+
+
+////////////////////////////////
+// PROJECTS
+
+.projects {
+    background-color: var(--color-grey-light);
+    height: 100%;
+
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__container {
+        
+    }
+
+    &__card {
+        background-color: var(--color-primary-light);
+        width: 30rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2px;
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    }
+
+    &__card--img {
+        width: 100%;
+    }
+
+    &__card--heading {
+        margin: 1.5rem 0;
+    }   
+
+    &__card--blurb {
+        font-size: 1.6rem;
+        padding: 1rem;
+        line-height: 1.6;
+    }
+
+}
+

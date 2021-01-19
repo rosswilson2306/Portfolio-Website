@@ -4,7 +4,7 @@
         <title>Ross Wilson Portfolio</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
 
     </head>
     <body>
@@ -19,6 +19,118 @@
                     </ul>
                 </nav>
             </header>
+
+            <div class="hero__container">
+                <div class="hero__text-box">
+                    <h1 class="hero__heading">
+                        Hello, I'm Ross Wilson.<br>
+                        <span class="hero__heading-sub">
+                            A full stack developer in training.
+                        </span>
+                    </h1>
+                    <button class="btn btn__hero">Find out more</button>
+                </div>
+
+                <img src="img/profile.jpeg" alt="Photo of Ross Wilson" class="hero__img">
+            </div>
         </section>
+
+        <main class="content">
+            <section class="about">
+                <div class="about__heading-box">
+                    <h2 class="about__heading heading__secondary">About Me</h2>
+                </div>
+
+                <div class="about__skills-box">
+                    <h3 class="skills__heading heading__tertiary">
+                        Skills
+                    </h3>
+                    <svg class="skills__icon html">
+                        <use xlink:href="img/sprite.svg#html5"></use>
+                    </svg>
+                    <svg class="skills__icon css">
+                        <use xlink:href="img/sprite.svg#css3"></use>
+                    </svg>
+                    <svg class="skills__icon git">
+                        <use xlink:href="img/sprite.svg#git"></use>
+                    </svg>
+                    <svg class="skills__icon github">
+                        <use xlink:href="img/sprite.svg#github"></use>
+                    </svg>
+                    <svg class="skills__icon sass">
+                        <use xlink:href="img/sprite.svg#sass"></use>
+                    </svg>
+                    <svg class="skills__icon js">
+                        <use xlink:href="img/sprite.svg#javascript"></use>
+                    </svg>
+                    <svg class="skills__icon node">
+                        <use xlink:href="img/sprite.svg#node-dot-js"></use>
+                    </svg>
+                    <svg class="skills__icon xd">
+                        <use xlink:href="img/sprite.svg#adobexd"></use>
+                    </svg>
+                </div>  
+                
+                <div class="about__blurb-box">
+                    <p class="about__blurb">
+                        I studied and worked professionally as a classical musician, becoming an award winning classical guitarist. Recently I decided to change careers and have been channeling my creativity towards achieving the same level of knowledge and skill as I had attained as a musician.
+                        <br><br>
+                        I am currently studying through CodeCademy as a full-stack developer. I have a passion for design.
+                    </p>
+                </div>
+            </section>
+
+            <section class="projects">
+                <div class="projects__heading-box">
+                    <h2 class="projects__heading heading__secondary">Projects</h2>
+                </div>
+
+                <div class="projects__container">
+                    <div class="projects__card">
+                        <img src="img/natours.png" alt="Photo of Natours website" class="projects__card--img">
+                        <h3 class="projects__card--heading heading__tertiary">Natours</h3>
+                        <p class="projects__card--blurb">A website for a fictional tours company. Created during a Udemy course on advanced CSS skills focusing on Sass, flexbox and grid.</p>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="img/trillo.png" alt="Photo of Trillo website" class="projects__card--img">
+                        <h3 class="projects__card--heading heading__tertiary">Trillo</h3>
+                        <p class="projects__card--blurb">A website for a fictional hotel booking company. Created during a Udemy course on advanced CSS skills focusing on Sass, flexbox and grid.</p>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="img/golf.png" alt="Photo of Golf Club website" class="projects__card--img">
+                        <h3 class="projects__card--heading heading__tertiary">Espedair Golf Course</h3>
+                        <p class="projects__card--blurb">A website for a fictional golf club in Scotland. Created as a project for CodeCademy Full-Stack course.</p>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="img/pig-game.png" alt="Photo of pig game" class="projects__card--img">
+                        <h3 class="projects__card--heading heading__tertiary">Pig Game</h3>
+                        <p class="projects__card--blurb">A simple interactive two player game coded up as a project during a Udemy course on Javascript.</p>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="img/guess.png" alt="Photo of Guess My Number game" class="projects__card--img">
+                        <h3 class="projects__card--heading heading__tertiary">Guess My Number</h3>
+                        <p class="projects__card--blurb">A simple interactive one player game coded up as a project during a Udemy course on Javascript.</p>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="img/tea.png" alt="Photo of Tea Cosy website" class="projects__card--img">
+                        <h3 class="projects__card--heading heading__tertiary">Tea Cosy</h3>
+                        <p class="projects__card--blurb">A website for a fictional cafe. Broken CSS was fixed as a project during CodeCademy Full-Stack course.</p>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="img/tour.png" alt="Photo of Scot Tours website" class="projects__card--img">
+                        <h3 class="projects__card--heading heading__tertiary">Scot Tours</h3>
+                        <p class="projects__card--blurb">A website for a fictional tours company. Built as a project during CodeCademy Full-Stack course.</p>
+                    </div>
+                </div>
+
+                
+            </section>
+        </main>
     </body>
 </html>
