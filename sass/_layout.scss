@@ -1,8 +1,14 @@
+body {
+    position: absolute;
+    width: 100%;
+}
+
+
 ////////////////////////////////
 // ABOUT
 
 .about {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -62,4 +68,31 @@
         
     }
 
+}
+
+
+////////////////////////////////
+// CONTACT
+
+.hero__contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact {
+
+    &__box {
+        margin: 0 auto;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    &__heading {
+        flex: 0 0 100%;
+    }
 }

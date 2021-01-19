@@ -83,7 +83,7 @@
 
 .hero {
     background-color: var(--color-grey-light);
-    height: 100vh;
+    min-height: 100vh;
 
     &__container {
         width: 80%;
@@ -102,6 +102,7 @@
 
     &__img {
         width: 30rem;
+        border-radius: 50%;
     }
 }
 
@@ -193,7 +194,7 @@
 
 .projects {
     background-color: var(--color-grey-light);
-    height: 100%;
+    min-height: 100%;
 
 
     &__heading {
@@ -217,6 +218,7 @@
 
     &__card--img {
         width: 100%;
+        cursor: pointer;
     }
 
     &__card--heading {
@@ -225,9 +227,123 @@
 
     &__card--blurb {
         font-size: 1.6rem;
-        padding: 1rem;
         line-height: 1.6;
     }
 
+    &__card-list {
+        list-style: none;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    &__card-item {
+        margin-bottom: 2rem;
+    }
+
+    &__card-link {
+        color: inherit;
+        text-decoration: none;
+    }
+
+}
+
+////////////////////////////////
+// MODAL WINDOWS
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+
+    background-color: var(--color-grey-light);
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0,0,0,.3);
+    z-index: 10;
+
+    padding: 2rem;
+
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+////////////////////////////////
+// FOOTER
+
+.footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--color-primary);
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &__copy {
+        font-size: 1.6rem;
+    }
+}
+
+
+////////////////////////////////
+// CONTACT
+.contact {
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__icon {
+        height: 6rem;
+        width: 6rem;
+        margin: 1rem;
+    }
+
+    &__para {
+        font-size: 1.6rem;
+    }
+}
+
+.gmail {
+    fill: #C71610;
+}
+
+.facebook {
+    fill: #3b5998;
+}
+
+.twitter {
+    fill: #1DA1F2;
 }
 
