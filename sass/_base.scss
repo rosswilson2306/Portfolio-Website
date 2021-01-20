@@ -5,9 +5,11 @@
 }
 
 :root {
-    --color-primary: #508ed4;
-    --color-primary-light: #94d6e9;
-    --color-primary-dark: #073666;
+    --color-primary: #328cc1;
+    --color-primary-light: #d9b310;
+    --color-primary-dark: #0b3c5d;
+    --color-primary-black: #1d2731;
+    
 
     --color-grey: #999;
     --color-grey-dark: #333;
@@ -19,3 +21,50 @@ html {
     color: var(--color-grey-dark);
     font-family: "Open Sans", sans-serif;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+   .hero__heading {
+       font-size: 3.5rem;
+   }
+
+   .about__skills-box {
+       height: 30rem;
+   }
+
+   .about__blurb-box {
+       height: 30rem;
+   }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 8px;
+    }
+
+    .hero {
+        max-height: 80vh;
+    }
+
+    .about {
+        max-height: 80vh;
+
+        
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .hero {
+        max-height: 70vh;
+    }
+
+    .about {
+        max-height: 60vh;
+    }
+}
+
+
+

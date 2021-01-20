@@ -38,14 +38,14 @@
 // HEADER
 
 .header {
-    background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
+    background-color: var(--color-primary-black);
     height: 10vh;
     font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    color: var(--color-grey-light);
+    color: var(--color-primary);
 
     &__name {
         color: inherit;
@@ -71,7 +71,7 @@
 
         &:hover,
         &:active {
-            border-bottom: 1px solid var(--color-grey-dark);
+            border-bottom: 1px solid var(--color-primary-light);
             transform: scale(1.2);
         }
     }
@@ -82,8 +82,9 @@
 // HERO
 
 .hero {
-    background-color: var(--color-grey-light);
-    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, var(--color-grey-light), var(--color-grey-dark));
+    height: 100vh;
+    
 
     &__container {
         width: 80%;
@@ -97,6 +98,7 @@
         font-size: 4.5rem;
         font-weight: 200;
         margin-top: -2rem;
+        color: var(--color-primary-dark)
     } 
 
 
@@ -112,17 +114,12 @@
 // ABOUT
 
 .about {
-    
-    &__heading-box {
+    max-height: 150vh;
 
-    }
 
     &__heading {
         text-align: center;
-    }
-
-    &__skills-box {
-        
+        color: var(--color-primary-dark);
     }
 
     &__blurb {
@@ -147,6 +144,7 @@
         width: 100%;
         height: 10%;
         text-align: center;
+        color: var(--color-primary-dark);
     }
 
     &__icon {
@@ -206,7 +204,8 @@
     }
 
     &__card {
-        background-color: var(--color-primary-light);
+        background-color: var(--color-grey-light);
+        color: var(--color-primary-dark);
         width: 30rem;
         height: 40rem;
         display: flex;
@@ -223,6 +222,7 @@
 
     &__card--heading {
         margin: 1.5rem 0;
+        color: var(--color-primary-dark);
     }   
 
     &__card--blurb {
@@ -303,7 +303,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-black);
+    color: var(--color-primary);
 
     &__heading {
         font-size: 2rem;
